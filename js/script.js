@@ -7,6 +7,7 @@ if (navToggle && navList) {
   navToggle.addEventListener('click', function() {
     // this checks to see if element has the class of close on it
     if (navToggle.classList.contains('close')) {
+      // if element has the close class that means the nav is open so to close it we need to remove the open class from the nav list and remove the class
       navToggle.classList.remove("close");
       navList.classList.remove("open");
       // you could also use the .toggle method wihich would make this code simpler
