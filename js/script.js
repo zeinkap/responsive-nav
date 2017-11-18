@@ -18,3 +18,21 @@ if (navToggle && navList) {
     }
   });
 }
+
+
+// js for animal tabs
+var catToggle = document.querySelector('#cat-toggle');
+var dogToggle = document.querySelector('#dog-toggle');
+var parakeetToggle = document.querySelector('#parakeet-toggle');
+
+catToggle.addEventListener('click', openAnimal);
+dogToggle.addEventListener('click', openAnimal);
+parakeetToggle.addEventListener('click', openAnimal);
+
+function openAnimal() {
+  if (catToggle.contains('close')) {
+    catToggle.classList.remove('close');
+  } else {
+    catToggle.classList.add('close');
+  }
+}

@@ -94,3 +94,27 @@
     max-height: 500px;
   }
 }
+
+
+.tab-menu {
+  overflow: hidden; /* why do we use this? i think to prevent text from overflowing*/
+  border: 1px solid green;
+  background-color: cornflowerblue;
+}
+
+.tab-menu button {
+  padding: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tab-menu button:hover {
+  background: #ddd;
+}
+
+.content {
+  display: none;
+  border: 1px solid grey;
+  padding: 5px;
+}
