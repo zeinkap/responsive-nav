@@ -1,3 +1,5 @@
+//*****querySelectorAll gives you an array like structure
+
 var navToggle = document.querySelector('#main-nav-toggle');
 var navList = document.querySelector('#main-nav-list');
 
@@ -21,18 +23,20 @@ if (navToggle && navList) {
 
 
 // js for animal tabs
+// to select the button qnd its content
 var catToggle = document.querySelector('#cat-toggle');
+var catContent = document.querySelector('#cat');
 var dogToggle = document.querySelector('#dog-toggle');
+var dogContent = document.querySelector('#dog');
 var parakeetToggle = document.querySelector('#parakeet-toggle');
+var parakeetContent = document.querySelector('#parakeet');
 
-catToggle.addEventListener('click', openAnimal);
-dogToggle.addEventListener('click', openAnimal);
-parakeetToggle.addEventListener('click', openAnimal);
-
-function openAnimal() {
-  if (catToggle.contains('close')) {
-    catToggle.classList.remove('close');
-  } else {
-    catToggle.classList.add('close');
-  }
-}
+catToggle.addEventListener('click', function() {
+  catContent.classList.toggle('open');
+});
+dogToggle.addEventListener('click', function() {
+  dogContent.classList.toggle('open');
+});
+parakeetToggle.addEventListener('click', function() {
+  parakeetContent.classList.toggle('open');
+});

@@ -118,3 +118,12 @@
   border: 1px solid grey;
   padding: 5px;
 }
+
+.content img {
+  width: 500px;
+  height: 400px;
+}
+
+.content.open {
+  display: block;
+}
